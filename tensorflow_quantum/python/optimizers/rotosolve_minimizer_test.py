@@ -71,7 +71,7 @@ def loss_function_with_model_parameters(model, loss, train_x, train_y):
         loss_value = loss(model(train_x, training=True), train_y)
         return loss_value
 
-    return exposed_func
+    return func
 
 
 class RotosolveMinimizerTest(tf.test.TestCase, parameterized.TestCase):
